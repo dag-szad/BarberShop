@@ -67,46 +67,89 @@
         </h2>
       </div>
     </section>
-    <section id="about">
-      <div>
-        <img
-          alt="Barber nakładający produkt na brodę."
-          src="images/about/about1_tablet.jpg"
-          srcset="
-            images/about/about1_tablet.jpg     330w,
-            images/about/about1_tablet@2x.jpg  660w,
-            images/about/about1_desktop.jpg    270w,
-            images/about/about1_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 330w"
-        />
-        <img
-          alt="Barber golący brzytwą."
-          src="images/about/about2_tablet.jpg"
-          srcset="
-            images/about/about2_tablet.jpg     330w,
-            images/about/about2_tablet@2x.jpg  660w,
-            images/about/about2_desktop.jpg    270w,
-            images/about/about2_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 330w"
-        />
+    <section
+      id="about"
+      class="flex justify-center gap-[30px] xl:gap-[65px] px-8 py-20 md:py-24 xl:py-32"
+    >
+      <div class="hidden md:flex md:flex-col md:gap-7 xl:flex-row">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about/about1_desktop.jpg    270w,
+              ./images/about/about1_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/about/about1_tablet.jpg    330w,
+              ./images/about/about1_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <img
+            alt="Barber nakładający produkt na brodę."
+            src="./images/about/about1_tablet.jpg"
+            class="w-[330px] h-[235px] xl:w-[270px] xl:h-[445px]"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about/about2_desktop.jpg    270w,
+              ./images/about/about2_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/about/about2_tablet.jpg    330w,
+              ./images/about/about2_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <img
+            alt="Barber golący brzytwą."
+            src="./images/about/about2_tablet.jpg"
+            class="w-[330px] h-[235px] xl:w-[270px] xl:h-[445px]"
+          />
+        </picture>
       </div>
-      <div>
-        <h2>O nas</h2>
-        <h3>Najlepszy Barbershop w Twoim mieście</h3>
-        <h4>
-          Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
-          dobrym miejscu.
-        </h4>
-        <p>
-          Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w
-          poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
-          już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
-          Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze wiemy,
-          co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
-        </p>
-        <button type="button">Rejestracja online</button>
+
+      <div class="md:max-w-xs xl:max-w-xl">
+        <div class="flex flex-col gap-5">
+          <div class="relative flex items-center">
+            <div class="border border-gray-900 w-16"></div>
+            <h2 class="font-semibold text-xs text-gray-900 uppercase mx-4">
+              O nas
+            </h2>
+          </div>
+          <h3 class="font-bold text-4xl text-gray-900">
+            Najlepszy Barbershop w Twoim mieście
+          </h3>
+          <h4 class="text-xl text-gray-600">
+            Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
+            dobrym miejscu.
+          </h4>
+          <p class="text-sm text-gray-600">
+            Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w
+            poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
+            już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
+            Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
+            wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
+          </p>
+        </div>
+        <button
+          type="button"
+          class="text-xs uppercase font-semibold py-3 px-5 border border-orange-500 rounded-full mt-10 hover:bg-orange-500 hover:text-white transition-all"
+        >
+          Rejestracja online
+        </button>
       </div>
     </section>
     <section id="prices">
