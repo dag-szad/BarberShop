@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div>
@@ -66,46 +67,89 @@
         </h2>
       </div>
     </section>
-    <section id="about">
-      <div>
-        <img
-          alt="Barber nakładający produkt na brodę."
-          src="images/about/about1_tablet.jpg"
-          srcset="
-            images/about/about1_tablet.jpg     330w,
-            images/about/about1_tablet@2x.jpg  660w,
-            images/about/about1_desktop.jpg    270w,
-            images/about/about1_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 330w"
-        />
-        <img
-          alt="Barber golący brzytwą."
-          src="images/about/about2_tablet.jpg"
-          srcset="
-            images/about/about2_tablet.jpg     330w,
-            images/about/about2_tablet@2x.jpg  660w,
-            images/about/about2_desktop.jpg    270w,
-            images/about/about2_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 330w"
-        />
+    <section
+      id="about"
+      class="flex justify-center gap-[30px] px-8 py-20 md:py-24 xl:gap-[65px] xl:py-32"
+    >
+      <div class="hidden md:flex md:flex-col md:gap-7 xl:flex-row">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about/about1_desktop.jpg    270w,
+              ./images/about/about1_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/about/about1_tablet.jpg    330w,
+              ./images/about/about1_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <img
+            alt="Barber nakładający produkt na brodę."
+            src="./images/about/about1_tablet.jpg"
+            class="w-[330px] xl:h-[445px] xl:w-[270px]"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about/about2_desktop.jpg    270w,
+              ./images/about/about2_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/about/about2_tablet.jpg    330w,
+              ./images/about/about2_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <img
+            alt="Barber golący brzytwą."
+            src="./images/about/about2_tablet.jpg"
+            class="w-[330px] xl:h-[445px] xl:w-[270px]"
+          />
+        </picture>
       </div>
-      <div>
-        <h2>O nas</h2>
-        <h3>Najlepszy Barbershop w Twoim mieście</h3>
-        <h4>
-          Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
-          dobrym miejscu.
-        </h4>
-        <p>
-          Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w
-          poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
-          już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
-          Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze wiemy,
-          co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
-        </p>
-        <button type="button">Rejestracja online</button>
+
+      <div class="md:max-w-xs xl:max-w-xl">
+        <div class="flex flex-col gap-5">
+          <div class="relative flex items-center">
+            <div class="w-16 border border-gray-900"></div>
+            <h2 class="mx-4 text-xs font-semibold uppercase text-gray-900">
+              O nas
+            </h2>
+          </div>
+          <h3 class="text-4xl font-bold text-gray-900">
+            Najlepszy Barbershop w Twoim mieście
+          </h3>
+          <h4 class="text-xl text-gray-600">
+            Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
+            dobrym miejscu.
+          </h4>
+          <p class="text-sm text-gray-600">
+            Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w
+            poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
+            już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
+            Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
+            wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
+          </p>
+        </div>
+        <button
+          type="button"
+          class="mt-10 rounded-full border border-orange-500 px-5 py-3 text-xs font-semibold uppercase transition-all hover:bg-orange-500 hover:text-white"
+        >
+          Rejestracja online
+        </button>
       </div>
     </section>
     <section id="prices">
@@ -248,61 +292,139 @@
         </li>
       </ul>
     </section>
-    <section id="photos">
-      <h2>W języku łacińskim "barba" oznacza broda</h2>
-      <div>
-        <img
-          alt="Fryzjer obcinający włosy."
-          src="images/photos/photo1_mobile.jpg"
-          srcset="
-            images/photos/photo1_mobile.jpg     418w,
-            images/photos/photo1_mobile@2x.jpg  836w,
-            images/photos/photo1_tablet.jpg     330w,
-            images/photos/photo1_tablet@2x.jpg  660w,
-            images/photos/photo1_desktop.jpg    270w,
-            images/photos/photo1_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
-        <img
-          alt="Barber nakładający produkt na brodę."
-          src="images/photos/photo2_mobile.jpg"
-          srcset="
-            images/photos/photo2_mobile.jpg     418w,
-            images/photos/photo2_mobile@2x.jpg  836w,
-            images/photos/photo2_tablet.jpg     330w,
-            images/photos/photo2_tablet@2x.jpg  660w,
-            images/photos/photo2_desktop.jpg    270w,
-            images/photos/photo2_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
-        <img
-          alt="Barber trzymający ręcznik."
-          src="images/photos/photo3_mobile.jpg"
-          srcset="
-            images/photos/photo3_mobile.jpg     418w,
-            images/photos/photo3_mobile@2x.jpg  836w,
-            images/photos/photo3_tablet.jpg     330w,
-            images/photos/photo3_tablet@2x.jpg  660w,
-            images/photos/photo3_desktop.jpg    270w,
-            images/photos/photo3_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
-        <img
-          alt="Barber podcinający włosy brzytwą."
-          src="images/photos/photo4_mobile.jpg"
-          srcset="
-            images/photos/photo4_mobile.jpg     418w,
-            images/photos/photo4_mobile@2x.jpg  836w,
-            images/photos/photo4_tablet.jpg     330w,
-            images/photos/photo4_tablet@2x.jpg  660w,
-            images/photos/photo4_desktop.jpg    270w,
-            images/photos/photo4_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
+    <section
+      id="photos"
+      class="flex flex-col justify-center gap-11 px-8 py-20 md:py-24 xl:py-32"
+    >
+      <div class="relative flex items-center">
+        <div class="w-16 border border-gray-900"></div>
+        <h2 class="mx-4 text-xs font-semibold uppercase text-gray-900">
+          W języku łacińskim "barba" oznacza broda
+        </h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo1_desktop.jpg    270w,
+              images/photos/photo1_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo1_tablet.jpg    330w,
+              images/photos/photo1_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo1_mobile.jpg    418w,
+              images/photos/photo1_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Fryzjer obcinający włosy."
+            src="images/photos/photo1_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo2_desktop.jpg    270w,
+              images/photos/photo2_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo2_tablet.jpg    330w,
+              images/photos/photo2_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo2_mobile.jpg    418w,
+              images/photos/photo2_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Barber nakładający produkt na brodę."
+            src="images/photos/photo2_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo3_desktop.jpg    270w,
+              images/photos/photo3_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo3_tablet.jpg    330w,
+              images/photos/photo3_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo3_mobile.jpg    418w,
+              images/photos/photo3_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Barber trzymający ręcznik."
+            src="images/photos/photo3_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo4_desktop.jpg    270w,
+              images/photos/photo4_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo4_tablet.jpg    330w,
+              images/photos/photo4_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo4_mobile.jpg    418w,
+              images/photos/photo4_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Barber podcinający włosy brzytwą."
+            src="images/photos/photo4_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
       </div>
     </section>
     <section id="contact">
@@ -349,11 +471,16 @@
         </div>
       </div>
     </section>
-    <footer>
-      <ul>
-        <li><a href="https://www.instagram.com"></a></li>
-        <li><a href="https://www.twitter.com"></a></li>
-      </ul>
+    <footer class="flex justify-center bg-gray-50 px-8 py-11 md:justify-end">
+      <div class="relative flex items-center">
+        <div class="w-16 border border-gray-600"></div>
+        <ul
+          class="mx-4 flex flex-row gap-10 text-xs font-semibold text-gray-600"
+        >
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
