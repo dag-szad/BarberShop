@@ -92,7 +92,7 @@
           <img
             alt="Barber nakładający produkt na brodę."
             src="./images/about/about1_tablet.jpg"
-            class="w-[330px] h-[235px] xl:w-[270px] xl:h-[445px]"
+            class="w-[330px] xl:w-[270px] xl:h-[445px]"
           />
         </picture>
 
@@ -116,7 +116,7 @@
           <img
             alt="Barber golący brzytwą."
             src="./images/about/about2_tablet.jpg"
-            class="w-[330px] h-[235px] xl:w-[270px] xl:h-[445px]"
+            class="w-[330px] xl:w-[270px] xl:h-[445px]"
           />
         </picture>
       </div>
@@ -292,61 +292,139 @@
         </li>
       </ul>
     </section>
-    <section id="photos">
-      <h2>W języku łacińskim "barba" oznacza broda</h2>
-      <div>
-        <img
-          alt="Fryzjer obcinający włosy."
-          src="images/photos/photo1_mobile.jpg"
-          srcset="
-            images/photos/photo1_mobile.jpg     418w,
-            images/photos/photo1_mobile@2x.jpg  836w,
-            images/photos/photo1_tablet.jpg     330w,
-            images/photos/photo1_tablet@2x.jpg  660w,
-            images/photos/photo1_desktop.jpg    270w,
-            images/photos/photo1_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
-        <img
-          alt="Barber nakładający produkt na brodę."
-          src="images/photos/photo2_mobile.jpg"
-          srcset="
-            images/photos/photo2_mobile.jpg     418w,
-            images/photos/photo2_mobile@2x.jpg  836w,
-            images/photos/photo2_tablet.jpg     330w,
-            images/photos/photo2_tablet@2x.jpg  660w,
-            images/photos/photo2_desktop.jpg    270w,
-            images/photos/photo2_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
-        <img
-          alt="Barber trzymający ręcznik."
-          src="images/photos/photo3_mobile.jpg"
-          srcset="
-            images/photos/photo3_mobile.jpg     418w,
-            images/photos/photo3_mobile@2x.jpg  836w,
-            images/photos/photo3_tablet.jpg     330w,
-            images/photos/photo3_tablet@2x.jpg  660w,
-            images/photos/photo3_desktop.jpg    270w,
-            images/photos/photo3_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
-        <img
-          alt="Barber podcinający włosy brzytwą."
-          src="images/photos/photo4_mobile.jpg"
-          srcset="
-            images/photos/photo4_mobile.jpg     418w,
-            images/photos/photo4_mobile@2x.jpg  836w,
-            images/photos/photo4_tablet.jpg     330w,
-            images/photos/photo4_tablet@2x.jpg  660w,
-            images/photos/photo4_desktop.jpg    270w,
-            images/photos/photo4_desktop@2x.jpg 540w
-          "
-          sizes="(min-width: 1280px) 270w, (min-width: 768px) 330w, 418w"
-        />
+    <section
+      id="photos"
+      class="flex flex-col justify-center gap-11 px-8 py-20 md:py-24 xl:py-32"
+    >
+      <div class="relative flex items-center">
+        <div class="border border-gray-900 w-16"></div>
+        <h2 class="font-semibold text-xs text-gray-900 uppercase mx-4">
+          W języku łacińskim "barba" oznacza broda
+        </h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo1_desktop.jpg    270w,
+              images/photos/photo1_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo1_tablet.jpg    330w,
+              images/photos/photo1_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo1_mobile.jpg    418w,
+              images/photos/photo1_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Fryzjer obcinający włosy."
+            src="images/photos/photo1_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo2_desktop.jpg    270w,
+              images/photos/photo2_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo2_tablet.jpg    330w,
+              images/photos/photo2_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo2_mobile.jpg    418w,
+              images/photos/photo2_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Barber nakładający produkt na brodę."
+            src="images/photos/photo2_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo3_desktop.jpg    270w,
+              images/photos/photo3_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo3_tablet.jpg    330w,
+              images/photos/photo3_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo3_mobile.jpg    418w,
+              images/photos/photo3_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Barber trzymający ręcznik."
+            src="images/photos/photo3_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/photos/photo4_desktop.jpg    270w,
+              images/photos/photo4_desktop@2x.jpg 540w
+            "
+            sizes="270px"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/photos/photo4_tablet.jpg    330w,
+              images/photos/photo4_tablet@2x.jpg 660w
+            "
+            sizes="330px"
+          />
+          <source
+            srcset="
+              images/photos/photo4_mobile.jpg    418w,
+              images/photos/photo4_mobile@2x.jpg 836w
+            "
+            sizes="418px"
+          />
+          <img
+            alt="Barber podcinający włosy brzytwą."
+            src="images/photos/photo4_mobile.jpg"
+            class="w-[418px] md:w-[330px] xl:w-[270px]"
+          />
+        </picture>
       </div>
     </section>
     <section id="contact">
