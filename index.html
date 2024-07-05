@@ -626,8 +626,8 @@
         </picture>
       </div>
     </section>
-    <section id="contact">
-      <div>
+    <section id="contact" class="flex flex-col bg-gray-900 xl:flex-row">
+      <div class="w-full xl:w-[50%]">
         <h2>Rezerwacja online</h2>
         <form action="">
           <div>
@@ -648,25 +648,44 @@
           <button type="submit">Wyślij</button>
         </form>
       </div>
-      <div>
-        <h2>Kontakt</h2>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <p>ul. Prosta 20 Warszawa, 00-001</p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <p>+48 111 111 111</p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <p>barbershop@email.com</p>
-          </li>
-        </ul>
-        <div>
-          <h3>Godziny otwarcia</h3>
-          <p>Codziennie od 9:00 do 22:00</p>
+      <div
+        class="flex w-full flex-col gap-11 bg-[url('../images/contact/contact_mobile.png')] bg-cover bg-center bg-no-repeat px-8 py-20 md:flex-row md:gap-20 md:bg-[url('../images/contact/contact_tablet.png')] md:px-24 md:py-24 xl:w-[50%] xl:flex-col xl:gap-16 xl:bg-[url('../images/contact/contact_desktop.png')] xl:py-32"
+      >
+        <div class="flex flex-col gap-10">
+          <h2 class="text-center text-4xl font-bold text-white sm:text-left">
+            Kontakt
+          </h2>
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-center gap-4">
+              <svg class="h-6 w-6">
+                <use href="./images/icons/icons.svg#pin" />
+              </svg>
+              <p class="text-lg text-[#9DA4BD]">
+                ul. Prosta 20 Warszawa, 00-001
+              </p>
+            </li>
+            <li class="flex items-center gap-4">
+              <svg class="h-6 w-6">
+                <use href="./images/icons/icons.svg#phone" />
+              </svg>
+              <p class="text-lg text-[#9DA4BD]">+48 111 111 111</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <svg class="h-6 w-6">
+                <use href="./images/icons/icons.svg#mail" />
+              </svg>
+              <p class="text-lg text-[#9DA4BD]">barbershop@email.com</p>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-5 md:mt-[80px] xl:mt-0">
+          <div class="relative flex items-center">
+            <div class="w-16 border-t border-white"></div>
+            <h3 class="mx-4 text-xs font-semibold uppercase text-white">
+              Godziny otwarcia
+            </h3>
+          </div>
+          <p class="text-lg text-[#9DA4BD]">Codziennie od 9:00 do 22:00</p>
         </div>
       </div>
     </section>
