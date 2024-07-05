@@ -223,72 +223,271 @@
         </h4>
       </div>
     </section>
-    <section id="team">
-      <h2>Dokładność i doświadczenie</h2>
-      <h3>Nasi barberzy</h3>
-      <ul>
+    <section
+      id="team"
+      class="mx-auto flex flex-col gap-11 bg-gray-50 px-8 py-20 md:py-24 xl:py-32"
+    >
+      <div class="flex flex-col gap-5 pl-16">
+        <div class="relative flex items-center">
+          <div class="w-16 border border-gray-900"></div>
+          <h2 class="mx-4 text-xs font-semibold uppercase text-gray-900">
+            Dokładność i doświadczenie
+          </h2>
+        </div>
+        <h3 class="inline text-4xl font-bold text-gray-900">Nasi barberzy</h3>
+      </div>
+
+      <ul
+        class="flex flex-col items-center justify-center gap-16 xl:flex-row xl:gap-8"
+      >
         <li>
-          <img
-            alt="Barber John Smith."
-            src="images/team/barber1_mobile.jpg"
-            srcset="
-              images/team/barber1_mobile.jpg     418w,
-              images/team/barber1_mobile@2x.jpg  836w,
-              images/team/barber1_desktop.jpg    370w,
-              images/team/barber1_desktop@2x.jpg 740w
-            "
-            sizes="(min-width: 1280px) 370w, (min-width: 768px) 450w, 418w"
-          />
-          <h4>John Smith</h4>
-          <p>Barber z 6 letnim doświadczeniem</p>
-          <ul>
-            <li><a href="https://www.instagram.com"></a></li>
-            <li><a href="https://www.twitter.com"></a></li>
-            <li><a href="https://www.facebook.com"></a></li>
-            <li><a href="https://www.linkedin.com"></a></li>
-          </ul>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                images/team/barber1_desktop.jpg    370w,
+                images/team/barber1_desktop@2x.jpg 740w
+              "
+              sizes="370px"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/team/barber1_desktop.jpg    370w,
+                images/team/barber1_desktop@2x.jpg 740w
+              "
+              sizes="450px"
+            />
+            <source
+              srcset="
+                images/team/barber1_mobile.jpg    418w,
+                images/team/barber1_mobile@2x.jpg 836w
+              "
+              sizes="418px"
+            />
+            <img
+              alt="Barber John Smith."
+              src="images/team/barber1_mobile.jpg"
+            />
+          </picture>
+          <div class="flex flex-col gap-2 pt-8">
+            <h4 class="text-center text-lg text-gray-600">John Smith</h4>
+            <p class="text-center text-sm text-orange-600">
+              Barber z 6 letnim doświadczeniem
+            </p>
+            <ul class="flex justify-center gap-3 pt-5">
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.instagram.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.twitter.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.facebook.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.linkedin.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li>
-          <img
-            alt="Barber Michael Doe."
-            src="images/team/barber2_mobile.jpg"
-            srcset="
-              images/team/barber2_mobile.jpg     418w,
-              images/team/barber2_mobile@2x.jpg  836w,
-              images/team/barber2_desktop.jpg    370w,
-              images/team/barber2_desktop@2x.jpg 740w
-            "
-            sizes="(min-width: 1280px) 370w, (min-width: 768px) 450w, 418w"
-          />
-          <h4>Michael Doe</h4>
-          <p>Barber z 3 letnim doświadczeniem</p>
-          <ul>
-            <li><a href="https://www.instagram.com"></a></li>
-            <li><a href="https://www.twitter.com"></a></li>
-            <li><a href="https://www.facebook.com"></a></li>
-            <li><a href="https://www.linkedin.com"></a></li>
-          </ul>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                images/team/barber2_desktop.jpg    370w,
+                images/team/barber2_desktop@2x.jpg 740w
+              "
+              sizes="370px"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/team/barber2_desktop.jpg    370w,
+                images/team/barber2_desktop@2x.jpg 740w
+              "
+              sizes="450px"
+            />
+            <source
+              srcset="
+                images/team/barber2_mobile.jpg    418w,
+                images/team/barber2_mobile@2x.jpg 836w
+              "
+              sizes="418px"
+            />
+            <img
+              alt="Barber Michael Doe."
+              src="images/team/barber2_mobile.jpg"
+            />
+          </picture>
+          <div class="flex flex-col gap-2 pt-8">
+            <h4 class="text-center text-lg text-gray-600">Michael Doe</h4>
+            <p class="text-center text-sm text-orange-600">
+              Barber z 3 letnim doświadczeniem
+            </p>
+            <ul class="flex justify-center gap-3 pt-5">
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.instagram.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.twitter.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.facebook.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.linkedin.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li>
-          <img
-            alt="Barber Alan Black."
-            src="images/team/barber3_mobile.jpg"
-            srcset="
-              images/team/barber3_mobile.jpg     418w,
-              images/team/barber3_mobile@2x.jpg  836w,
-              images/team/barber3_desktop.jpg    370w,
-              images/team/barber3_desktop@2x.jpg 740w
-            "
-            sizes="(min-width: 1280px) 370w, (min-width: 768px) 450w, 418w"
-          />
-          <h4>Alan Black</h4>
-          <p>Barber z 10 letnim doświadczeniem</p>
-          <ul>
-            <li><a href="https://www.instagram.com"></a></li>
-            <li><a href="https://www.twitter.com"></a></li>
-            <li><a href="https://www.facebook.com"></a></li>
-            <li><a href="https://www.linkedin.com"></a></li>
-          </ul>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                images/team/barber3_desktop.jpg    370w,
+                images/team/barber3_desktop@2x.jpg 740w
+              "
+              sizes="370px"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/team/barber3_desktop.jpg    370w,
+                images/team/barber3_desktop@2x.jpg 740w
+              "
+              sizes="450px"
+            />
+            <source
+              srcset="
+                images/team/barber3_mobile.jpg    418w,
+                images/team/barber3_mobile@2x.jpg 836w
+              "
+              sizes="418px"
+            />
+            <img
+              alt="Barber Alan Black."
+              src="images/team/barber3_mobile.jpg"
+            />
+          </picture>
+          <div class="flex flex-col gap-2 pt-8">
+            <h4 class="text-center text-lg text-gray-600">Alan Black</h4>
+            <p class="text-center text-sm text-orange-600">
+              Barber z 10 letnim doświadczeniem
+            </p>
+            <ul class="flex justify-center gap-3 pt-5">
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.instagram.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.twitter.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.facebook.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="group w-11 rounded-full bg-white p-3 hover:transition-colors"
+              >
+                <a href="https://www.linkedin.com">
+                  <svg
+                    class="h-5 w-5 fill-[#303030] transition-colors group-hover:fill-[#FF6C00]"
+                  >
+                    <use href="./images/icons/icons.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </section>
@@ -296,7 +495,7 @@
       id="photos"
       class="flex flex-col justify-center gap-11 px-8 py-20 md:py-24 xl:py-32"
     >
-      <div class="relative flex items-center">
+      <div class="relative flex items-center pl-16">
         <div class="w-16 border border-gray-900"></div>
         <h2 class="mx-4 text-xs font-semibold uppercase text-gray-900">
           W języku łacińskim "barba" oznacza broda
