@@ -604,32 +604,16 @@ video {
   width: 1.25rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-\[330px\] {
   width: 330px;
 }
 
 .w-\[418px\] {
   width: 418px;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .w-full {
@@ -676,6 +660,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -688,14 +676,6 @@ video {
   gap: 30px;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -706,10 +686,6 @@ video {
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .border-gray-600 {
@@ -737,140 +713,18 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[url\] {
-  background-color: url;
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/\)\] {
-  background-image: url(./);
-}
-
-.bg-\[url\(\.\/i\)\] {
-  background-image: url(./i);
-}
-
-.bg-\[url\(\.\/images\)\] {
-  background-image: url(./images);
-}
-
-.bg-\[url\(\.\/images\/\)\] {
-  background-image: url(./images/);
-}
-
-.bg-\[url\(\.\/images\/contact\/contact_\)\] {
-  background-image: url(./images/contact/contact_);
-}
-
-.bg-\[url\(\.\/images\/contact\/contact_desktop\)\] {
-  background-image: url(./images/contact/contact_desktop);
-}
-
-.bg-\[url\(\.\/images\/contact\/contact_desktop\.jpg\)\] {
-  background-image: url(./images/contact/contact_desktop.jpg);
-}
-
-.bg-\[url\(\.\/images\/contact\/contact_desktop\.jpg\;\)\] {
-  background-image: url(./images/contact/contact_desktop.jpg;);
-}
-
-.bg-\[url\(\'\.\/images\/contact\/contact_desktop\.jpg\'\)\] {
-  background-image: url('./images/contact/contact_desktop.jpg');
-}
-
-.bg-\[url\(\'images\/contact\/contact_desktop\.jpg\'\)\] {
-  background-image: url('images/contact/contact_desktop.jpg');
-}
-
-.bg-\[url\(\'\.\.\/public\/images\/hero\.jpg\'\)\] {
-  background-image: url('../public/images/hero.jpg');
-}
-
-.bg-\[url\(\'images\'\)\] {
-  background-image: url('images');
-}
-
-.bg-\[url\(\'images\/contact\'\)\] {
-  background-image: url('images/contact');
-}
-
-.bg-\[url\(\'images\/contact\/contact_desktop\.png\'\)\] {
-  background-image: url('images/contact/contact_desktop.png');
-}
-
-.bg-\[url\(\'\.\.\/public\/images\/hero-mobile\.jpg\'\)\] {
-  background-image: url('../public/images/hero-mobile.jpg');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'\.\/images\/\'\)\] {
-  background-image: url('./images/');
-}
-
-.bg-\[url\(\'\.\/images\/c\'\)\] {
-  background-image: url('./images/c');
-}
-
-.bg-\[url\(\'\.\/images\/contact\/contact\'\)\] {
-  background-image: url('./images/contact/contact');
-}
-
-.bg-\[url\(\'\.\/images\/contact\/contact_mobile\.png\'\)\] {
-  background-image: url('./images/contact/contact_mobile.png');
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/images\/contact\/contact_mobile\.png\'\)\] {
   background-image: url('../images/contact/contact_mobile.png');
-}
-
-.bg-\[url\(\'images\/contact\/contact_mobile\.png\'\)\] {
-  background-image: url('images/contact/contact_mobile.png');
 }
 
 .bg-cover {
@@ -918,11 +772,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .pl-16 {
   padding-left: 4rem;
 }
@@ -937,10 +786,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-4xl {
@@ -980,6 +825,11 @@ video {
   text-transform: uppercase;
 }
 
+.text-\[\#9DA4BD\] {
+  --tw-text-opacity: 1;
+  color: rgb(157 164 189 / var(--tw-text-opacity));
+}
+
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -998,15 +848,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[9DA4BD\] {
-  color: 9DA4BD;
-}
-
-.text-\[\#9DA4BD\] {
-  --tw-text-opacity: 1;
-  color: rgb(157 164 189 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -1048,14 +889,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-\[60px\] {
-    margin-top: 60px;
-  }
-
-  .md\:mt-\[90px\] {
-    margin-top: 90px;
-  }
-
   .md\:mt-\[80px\] {
     margin-top: 80px;
   }
@@ -1066,10 +899,6 @@ video {
 
   .md\:w-\[330px\] {
     width: 330px;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:max-w-xs {
@@ -1088,66 +917,32 @@ video {
     justify-content: flex-end;
   }
 
-  .md\:gap-7 {
-    gap: 1.75rem;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
-  }
-
   .md\:gap-20 {
     gap: 5rem;
   }
 
-  .md\:bg-none {
-    background-image: none;
-  }
-
-  .md\:bg-\[url\(\'\.\/images\/contact\/contact_desktop\.png\'\)\] {
-    background-image: url('./images/contact/contact_desktop.png');
-  }
-
-  .md\:bg-\[url\(\'\.\/images\/contact\/contact_tablet\.png\'\)\] {
-    background-image: url('./images/contact/contact_tablet.png');
+  .md\:gap-7 {
+    gap: 1.75rem;
   }
 
   .md\:bg-\[url\(\'\.\.\/images\/contact\/contact_tablet\.png\'\)\] {
     background-image: url('../images/contact/contact_tablet.png');
   }
 
-  .md\:bg-\[url\(\'images\/contact\/contact_tablet\.png\'\)\] {
-    background-image: url('images/contact/contact_tablet.png');
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
 }
 
 @media (min-width: 1280px) {
   .xl\:mt-0 {
     margin-top: 0px;
-  }
-
-  .xl\:flex {
-    display: flex;
   }
 
   .xl\:h-\[445px\] {
@@ -1174,6 +969,10 @@ video {
     flex-direction: column;
   }
 
+  .xl\:gap-16 {
+    gap: 4rem;
+  }
+
   .xl\:gap-8 {
     gap: 2rem;
   }
@@ -1182,51 +981,12 @@ video {
     gap: 65px;
   }
 
-  .xl\:gap-11 {
-    gap: 2.75rem;
-  }
-
-  .xl\:gap-16 {
-    gap: 4rem;
-  }
-
-  .xl\:bg-\[url\(\'\.\.\/public\/images\/hero-desktop\.jpg\'\)\] {
-    background-image: url('../public/images/hero-desktop.jpg');
-  }
-
-  .xl\:bg-\[url\(\'\.\/images\/contact\/contact_mobile\.png\'\)\] {
-    background-image: url('./images/contact/contact_mobile.png');
-  }
-
-  .xl\:bg-\[url\(\'\.\/images\/contact\/contact_desktop\.png\'\)\] {
-    background-image: url('./images/contact/contact_desktop.png');
-  }
-
   .xl\:bg-\[url\(\'\.\.\/images\/contact\/contact_desktop\.png\'\)\] {
     background-image: url('../images/contact/contact_desktop.png');
-  }
-
-  .xl\:bg-\[url\(\'images\/contact\/contact_desktop\.png\'\)\] {
-    background-image: url('images/contact/contact_desktop.png');
   }
 
   .xl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .xl\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .xl\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
-  .xl\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 }
