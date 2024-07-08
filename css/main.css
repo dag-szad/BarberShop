@@ -576,6 +576,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .inline {
   display: inline;
 }
@@ -770,6 +774,11 @@ video {
 
 .max-w-\[400px\] {
   max-width: 400px;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .flex-shrink-0 {
