@@ -606,6 +606,14 @@ video {
   top: -10rem;
 }
 
+.-top-\[90px\] {
+  top: -90px;
+}
+
+.top-\[90px\] {
+  top: 90px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -674,6 +682,14 @@ video {
 
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[670px\] {
+  height: 670px;
 }
 
 .min-h-8 {
@@ -933,6 +949,11 @@ video {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/images\/contact\/contact_mobile\.png\'\)\] {
   background-image: url('../images/contact/contact_mobile.png');
 }
@@ -1009,6 +1030,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1023,6 +1049,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-28 {
+  padding-left: 7rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
 }
 
 .text-left {
@@ -1073,6 +1107,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1203,6 +1242,14 @@ video {
 
   .md\:h-\[680px\] {
     height: 680px;
+  }
+
+  .md\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .md\:h-\[770px\] {
+    height: 770px;
   }
 
   .md\:w-\[330px\] {
