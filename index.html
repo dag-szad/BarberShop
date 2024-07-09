@@ -30,12 +30,12 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div>
+    <!-- <div>
       <a href="#banner">Przejdź do treści</a>
       <a href="#about">Przejdź do opisu</a>
       <a href="#prices">Przejdź do cen</a>
       <a href="#contact">Przejdź do kontaktu</a>
-    </div>
+    </div> -->
     <header class="flex items-center justify-between px-8 pt-8">
       <div class="flex items-center gap-20">
         <a href="index.html">
@@ -85,20 +85,100 @@
         </div>
       </div>
       <div
-        class="relative top-[-90px] -z-10 flex h-[670px] flex-grow flex-col justify-center gap-5 bg-slate-800 px-8 md:top-[-110px] md:h-[790px] md:px-24 xl:top-[-90px] xl:h-[770px]"
+        class="relative top-[-90px] -z-10 flex h-[670px] flex-grow overflow-hidden px-8 md:top-[-110px] md:h-[790px] md:px-24 xl:top-[-90px] xl:h-[770px]"
       >
-        <div class="relative flex items-center">
-          <div class="w-16 border border-gray-600"></div>
-          <h2 class="mx-4 text-xs font-semibold uppercase text-gray-600">
-            A hair salon for men in Warsaw
+        <div class="absolute inset-0 h-full w-full">
+          <div class="relative h-full w-full">
+            <div
+              class="animate-fade1 absolute inset-0 h-full w-full transition-opacity duration-1000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    images/banner/banner1_tablet@2x.jpg 2x,
+                    images/banner/banner1_tablet.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/banner/banner1_mobile@2x.jpg 2x,
+                    images/banner/banner1_mobile.jpg    1x
+                  "
+                />
+                <img
+                  src="images/banner/banner1_mobile.jpg"
+                  alt="Image 1"
+                  class="h-full w-full object-cover"
+                />
+              </picture>
+            </div>
+            <div
+              class="animate-fade2 absolute inset-0 h-full w-full transition-opacity duration-1000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    images/banner/banner2_tablet@2x.jpg 2x,
+                    images/banner/banner2_tablet.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/banner/banner2_mobile@2x.jpg 2x,
+                    images/banner/banner2_mobile.jpg    1x
+                  "
+                />
+                <img
+                  src="images/banner/banner2_mobile.jpg"
+                  alt="Image 2"
+                  class="h-full w-full object-cover"
+                />
+              </picture>
+            </div>
+            <div
+              class="animate-fade3 absolute inset-0 h-full w-full transition-opacity duration-1000"
+            >
+              <picture>
+                <source
+                  srcset="
+                    images/banner/banner3_tablet@2x.jpg 2x,
+                    images/banner/banner3_tablet.jpg    1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/banner/banner3_mobile@2x.jpg 2x,
+                    images/banner/banner3_mobile.jpg    1x
+                  "
+                />
+                <img
+                  src="images/banner/banner3_mobile.jpg"
+                  alt="Image 3"
+                  class="h-full w-full object-cover"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="z-20 flex flex-col justify-center gap-5">
+          <div class="relative flex items-center">
+            <div class="w-16 border border-gray-400"></div>
+            <h2 class="mx-4 text-xs font-semibold uppercase text-gray-400">
+              A hair salon for men in Warsaw
+            </h2>
+          </div>
+          <h1 class="text-7xl font-bold text-white">BarberShop</h1>
+          <h2 class="text-lg text-gray-400">
+            Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i elegancko.
           </h2>
         </div>
-        <h1 class="text-7xl font-bold text-white">BarberShop</h1>
-        <h2 class="text-lg text-gray-400">
-          Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i elegancko.
-        </h2>
       </div>
     </section>
+
     <section
       id="about"
       class="flex justify-center gap-[30px] px-8 py-20 md:py-24 xl:gap-[65px] xl:py-32"
