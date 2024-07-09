@@ -1404,12 +1404,24 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:top-\[-90px\] {
+    top: -90px;
+  }
+
   .xl\:mt-0 {
     margin-top: 0px;
   }
 
   .xl\:h-\[445px\] {
     height: 445px;
+  }
+
+  .xl\:h-\[790px\] {
+    height: 790px;
+  }
+
+  .xl\:h-\[770px\] {
+    height: 770px;
   }
 
   .xl\:w-\[270px\] {
