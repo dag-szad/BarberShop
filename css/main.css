@@ -626,6 +626,10 @@ video {
   z-index: -10;
 }
 
+.-z-\[90px\] {
+  z-index: -90px;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -992,6 +996,10 @@ video {
   fill: #4b5563;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1224,6 +1232,22 @@ video {
     position: relative;
   }
 
+  .md\:top-\[-90px\] {
+    top: -90px;
+  }
+
+  .md\:top-\[-110px\] {
+    top: -110px;
+  }
+
+  .md\:z-\[-110px\] {
+    z-index: -110px;
+  }
+
+  .md\:-z-\[110px\] {
+    z-index: -110px;
+  }
+
   .md\:mt-\[80px\] {
     margin-top: 80px;
   }
@@ -1250,6 +1274,10 @@ video {
 
   .md\:h-\[770px\] {
     height: 770px;
+  }
+
+  .md\:h-\[790px\] {
+    height: 790px;
   }
 
   .md\:w-\[330px\] {
@@ -1327,6 +1355,10 @@ video {
 
   .md\:bg-\[url\(\'\.\.\/images\/prices\/prices_tablet\.png\'\)\] {
     background-image: url('../images/prices/prices_tablet.png');
+  }
+
+  .md\:fill-gray-600 {
+    fill: #4b5563;
   }
 
   .md\:px-24 {
