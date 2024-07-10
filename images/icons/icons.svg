@@ -1,5 +1,13 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="menu" viewBox="0 0 48 32">
+<title>menu</title>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 5.4v-5.4h48v5.4h-48zM0 18.6h48v-5.2h-48v5.2zM0 32h48v-5.4h-48v5.4z"></path>
+</symbol>
+<symbol id="close" viewBox="0 0 32 32">
+<title>close</title>
+<path d="M31.444 3.166l-3.166-3.166-12.564 12.547-12.547-12.547-3.166 3.166 12.547 12.547-12.547 12.581 3.166 3.166 12.547-12.564 12.564 12.564 3.166-3.166-12.564-12.564 12.564-12.547z"></path>
+</symbol>
 <symbol id="logo" viewBox="0 0 39 32">
 <title>logo</title>
 <path d="M22.371 9.64l-0.749-0.571c-0.097-0.079-0.223-0.127-0.36-0.127-0.177 0-0.335 0.080-0.44 0.206l-0.001 0.001-10.36 11.897 0.16 0.177 2.566-2.366c-0.146-0.060-0.247-0.201-0.247-0.366 0-0.218 0.177-0.394 0.394-0.394 0.002 0 0.005 0 0.007 0h-0c0 0 0 0 0 0 0.174 0 0.321 0.114 0.371 0.272l0.001 0.003 3.383-3.137c0.050-0.040 0.113-0.065 0.183-0.065s0.133 0.024 0.183 0.065l-0.001-0 0.171 0.126c0.046 0.033 0.104 0.053 0.166 0.053 0.086 0 0.164-0.038 0.216-0.099l0-0 4.423-4.96c0.081-0.085 0.131-0.2 0.131-0.328 0-0.159-0.078-0.3-0.198-0.386l-0.001-0.001z"></path>
@@ -7,17 +15,17 @@
 </symbol>
 <symbol id="phone" viewBox="0 0 32 32">
 <title>phone</title>
-<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #9da4bd)" d="M26.667 21.333v3.2c0 0.005 0 0.011 0 0.017 0 1.178-0.955 2.133-2.133 2.133-0.094 0-0.187-0.006-0.277-0.018l0.011 0.001c-6.581-0.763-12.177-4.422-15.549-9.649l-0.051-0.084c-1.751-2.652-2.941-5.822-3.324-9.236l-0.009-0.097c-0.003-0.040-0.004-0.086-0.004-0.133 0-1.178 0.955-2.133 2.133-2.133 0.001 0 0.003 0 0.004 0h3.2c1.067 0 2 0.8 2.133 1.867s0.4 2 0.8 2.933c0.267 0.8 0 1.733-0.533 2.267l-1.333 1.333c1.6 2.667 3.733 4.933 6.4 6.533l1.333-1.333c0.667-0.667 1.6-0.8 2.4-0.533 0.933 0.4 1.867 0.667 2.933 0.8 1.067 0 1.867 1.067 1.867 2.133z"></path>
+<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #9da4bd)" d="M26.667 21.333v3.2c0 0.005 0 0.011 0 0.017 0 1.178-0.955 2.133-2.133 2.133-0.094 0-0.187-0.006-0.277-0.018l0.011 0.001c-6.581-0.763-12.177-4.422-15.549-9.649l-0.051-0.084c-1.751-2.652-2.941-5.822-3.324-9.236l-0.009-0.097c-0.003-0.040-0.004-0.086-0.004-0.133 0-1.178 0.955-2.133 2.133-2.133 0.001 0 0.003 0 0.004 0h3.2c1.067 0 2 0.8 2.133 1.867s0.4 2 0.8 2.933c0.267 0.8 0 1.733-0.533 2.267l-1.333 1.333c1.6 2.667 3.733 4.933 6.4 6.533l1.333-1.333c0.667-0.667 1.6-0.8 2.4-0.533 0.933 0.4 1.867 0.667 2.933 0.8 1.067 0 1.867 1.067 1.867 2.133z"></path>
 </symbol>
 <symbol id="mail" viewBox="0 0 32 32">
 <title>mail</title>
-<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #9da4bd)" d="M6.4 6.667h19.2c1.333 0 2.4 1.067 2.4 2.4v13.867c0 1.333-1.067 2.4-2.4 2.4h-19.2c-1.333 0-2.4-1.067-2.4-2.4v-13.867c0-1.333 1.067-2.4 2.4-2.4z"></path>
-<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #9da4bd)" d="M26.667 9.333l-10.667 8-10.667-8"></path>
+<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #9da4bd)" d="M6.4 6.667h19.2c1.333 0 2.4 1.067 2.4 2.4v13.867c0 1.333-1.067 2.4-2.4 2.4h-19.2c-1.333 0-2.4-1.067-2.4-2.4v-13.867c0-1.333 1.067-2.4 2.4-2.4z"></path>
+<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #9da4bd)" d="M26.667 9.333l-10.667 8-10.667-8"></path>
 </symbol>
 <symbol id="pin" viewBox="0 0 32 32">
 <title>pin</title>
-<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #9da4bd)" d="M26.667 13.867c0 7.467-10.667 14.133-10.667 14.133s-10.667-6.667-10.667-14.133c0-5.467 4.8-9.867 10.667-9.867s10.667 4.4 10.667 9.867v0z"></path>
-<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #9da4bd)" d="M16 18.667c2.209 0 4-1.791 4-4s-1.791-4-4-4v0c-2.209 0-4 1.791-4 4s1.791 4 4 4v0z"></path>
+<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #9da4bd)" d="M26.667 13.867c0 7.467-10.667 14.133-10.667 14.133s-10.667-6.667-10.667-14.133c0-5.467 4.8-9.867 10.667-9.867s10.667 4.4 10.667 9.867v0z"></path>
+<path fill="none" stroke="#9da4bd" stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #9da4bd)" d="M16 18.667c2.209 0 4-1.791 4-4s-1.791-4-4-4v0c-2.209 0-4 1.791-4 4s1.791 4 4 4v0z"></path>
 </symbol>
 <symbol id="facebook" viewBox="0 0 32 32">
 <title>facebook</title>
